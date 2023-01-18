@@ -1,0 +1,70 @@
+.educ-container{
+    width: 100%;
+    height: auto;
+}
+
+.educ-content{
+    position: relative;
+    max-width: calc(100% - 200px);
+    width: 100%;
+    height: 100%;
+    margin: 10px auto;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+}
+.educ-content .educ-text{
+    margin-right: 80px;
+}
+
+.educ-text .educ-school{
+    margin-top: 30px;
+    padding-left: 20px;
+    color: #6C6969;
+}
+
+.educ-school li{
+    margin-top: 20px;
+}
+
+.educ-school li p{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.educ-content .educ-photo{
+    width: 620px;
+    height: 430px;
+}
+
+.educ-photo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width:768px){
+    .educ-content .educ-text{
+        margin-right: 80px;
+    }
+    .educ-school li{
+        font-size: 0.7em;
+    }
+}
+@media only screen and (max-width:480px){
+    .educ-content{
+        display: flex;
+        flex-direction: column;
+        max-width: calc(100% - 80px);
+    }
+    .educ-content .educ-text{
+        margin-right: 0;
+    }
+    .educ-content .educ-photo{
+        width: 280px;
+        height: 200px;
+        display: block;
+        margin: 30px auto;
+    }    
+}

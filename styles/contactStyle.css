@@ -1,0 +1,183 @@
+.contact-container{
+    width: 100%;
+    height: 340px;
+    background-color: #fbf8da;
+}
+
+.contact-content{
+    position: relative;
+    max-width: calc(100% - 200px);
+    width: 100%;
+    height: 100%;
+    margin: 10px auto;
+    padding-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-main{
+    flex-basis: 35%;
+}
+
+.contacts{
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+.contacts .mail-phone{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.mail-phone img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.contacts .socials{
+    margin-top: 15px;
+}
+
+.socials a{
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.socials a img{
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.socials a img:hover{
+    transform: translateY(-5px) scale(1.1);
+}
+
+.contact-form{
+    flex-basis: 65%;
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nameMail{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nameMail input{
+    width: 48%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #69349C;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.contact-form .msgSubmit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.msgSubmit textarea{
+    width: 100%;
+    max-width: 750px;
+    height: 120px;
+    max-height: 100px;
+    padding: 5px 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #69349C;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.msgSubmit button{
+    width: 110px;
+    padding: 5px;
+    font-size: 1em;
+    background-color: #69349C;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.msgSubmit button:hover{
+    background-color: #8A72BE;
+}
+
+
+/* footer  */
+.myfooter {
+    width: 100%;
+    height: 60px;
+    background-color: #69349C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright p{
+    color: #fff;
+}
+
+@media only screen and (max-width:1024px){
+    .contact-form{
+        padding: 30px 30px;
+    }
+}
+
+@media only screen and (max-width:768px){
+
+    .contacts{
+        padding-left: 0;
+    }
+    .contact-form{
+        padding: 10px 0 0 30px;
+    }
+    .nameMail{
+        display: block;
+        width: 100%;
+    }
+    .nameMail input{
+        margin-top: 10px;
+        width: 100%
+    }
+    .msgSubmit textarea{
+        margin: 10px 0;
+    }
+    .copyright p{
+       font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .contact-container{
+        height: auto;
+    }
+    .contact-content{
+        max-width: calc(100% - 80px);
+        display: block;
+        margin-bottom: 0;
+    }
+    .contacts img, .socials a img{
+        width: 30px;
+        height: 30px;
+    }
+    .contact-form{
+        padding: 0;
+    }
+    .msgSubmit button{
+        margin-bottom: 30px;
+    }
+    .copyright p{
+        font-size: 0.5em;
+     }
+}

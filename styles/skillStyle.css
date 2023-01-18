@@ -1,0 +1,234 @@
+.skill-container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.backgroundLine{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #8A72BE;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.skill-content{
+    position: relative;
+    max-width: calc(100% - 200px);
+    width: 100%;
+    height: 100%;
+    margin: 10px auto;
+    padding-top: 30px;
+} 
+
+.skill-main{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    height: 70%;
+    width: inherit;
+}
+
+.skill-main .codingImg{
+    flex-basis: 40%;
+    width: auto;
+    height: 100%;
+    margin-left: 30px;
+    /* background-color: pink; */
+}
+.skill-main .codingImg img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.skill-main  .slider-container{
+    margin: 0 80px;
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+    padding: 0 80px;
+}
+
+/* swiper slider main content whole */
+.swiper-slide{
+    border: 2px solid #69349C;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.swiper-slide .slide-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 14%;
+    border-radius: 20px 20px 0 0;
+    background-color: #69349C;
+    border: 1px solid #69349C;
+}
+
+.slide-header h3{
+    color: #fff;
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+.swiper-slide .slide-main{
+    width: 100%;
+    height: 86%;
+    display: grid;
+    grid-template-rows: 2fr 1.5fr 2fr;
+    border-radius: 20px;
+}
+
+/* percentage content  */
+.slide-main .percent{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.percent .percentage{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.percentage p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.percentage img{
+    height: 110px;
+    width: 110px;
+}
+
+/* program icons content  */
+.slide-main .icon-program{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-program .icon-main{
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-main img{
+    width: 60px;
+    height: 60px;
+}
+
+.icon-main p{
+    font-size: 25px;
+}
+
+/* skill description content  */
+.slide-main .skill-describe{
+    width: 100%;
+    padding: 0 60px;
+}
+
+.skill-describe .describe-list{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.describe-list li{
+    font-size: 0.8em;
+}
+
+/* swiper buttons and pagination  */
+.swiper-button-prev,.swiper-button-next{
+    color: #69349C;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #69349C !important;
+}
+
+@media only screen and (max-width:1200px){
+    .icon-main p{
+        font-size: 1.3em;
+    }
+}
+@media only screen and (max-width:1024px){
+    .skill-main .codingImg{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .skill-main  .slider-container{
+        margin: 0;
+    }
+    .swiper{
+        padding: 0 50px;
+    }
+    .slide-main .skill-describe{
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .skill-container{
+        height: 680px;
+    }
+    .skill-main .codingImg{
+        display: none;
+    }
+    .skill-content{
+        max-width: 100%;
+    }
+    .skill-content h2{
+        margin-left: 50px;
+    }
+    .slide-main{
+        width: 100%;
+        height: 80%;
+        grid-template-rows: auto auto auto;
+    }
+    .slide-header h3{
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+    .percent{
+        width: 100px;
+    }
+    .percent .percentage{
+        width: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+    .percentage img{
+        width: 65px;
+        height: 65px;
+    }
+    .icon-program .icon-main{
+        width: 80px;
+    }
+    .icon-main p{
+        font-size: 0.8em;
+    }
+    .skill-describe{
+        width: 100%;
+    }
+    .describe-list li{
+        font-size: 0.6em;
+    }
+
+}

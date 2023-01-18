@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 600;
+    color: #69349C;
+}
+
+.gradient-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #8A72BE 0%, 
+    rgba(173, 159, 202, 0.56149) 32.6%, 
+    rgba(199, 194, 211, 0.226841) 71.67%, 
+    rgba(210, 208, 215, 0.0908693) 99.99%, 
+    rgba(217, 217, 217, 0) 100%);
+    padding: 10px 100px;
+}
+
+.nav-bar{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+.nav-bar ul img{
+    display: none;
+}
+.nav-bar ul li{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 40px;
+}
+
+#menu-icon{
+    display: none;
+}
+
+.nav-bar ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+ 
+.nav-bar ul li a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: -7px;
+    background: #FFFCCF;
+    border-radius: 2px;
+    transition: all 0.3s ease-in;
+    z-index: 3;
+}
+
+.nav-bar ul li a:hover::before{
+    width: 100%;
+}
+
+.profile-Frame{
+    position: inherit;
+    width: 100%;
+    height: calc(100% - 80px); 
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    /* border: 1px solid black; */
+}
+
+.profile-Frame .profile-title{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.profile-title .description h1{
+    font-weight: 600;
+    font-size: 2.7em;
+}
+
+.profile-title .description h1 span{
+    color: #69349C;
+    cursor: pointer;
+}
+
+.profile-title .description h3{
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 35px;
+}
+
+.profile-title .description p{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1em;
+}
+
+.profile-title .dl-btn{
+    height: auto;
+    width: 160px;
+    margin-top: 20px; 
+    padding: 5px 5px;
+    cursor: pointer;
+    background-color: #69349C;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+}
+.profile-Frame .profilePic{
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.profilePic .photo-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-container img{
+    transform: scale(0.9);
+    padding-left: 50px;
+    object-fit: cover;
+    z-index: 4;
+}
+
+@media only screen and (max-width:1200px) {
+    .photo-container img{
+        transform: scale(0.8);
+    }
+    .profile-Frame .profile-title{
+        flex-basis: 50%;
+    }
+
+    .nav-bar ul li{
+        margin: 0 20px;
+    }
+    .profile-title .description h1 span{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .nav-bar .nav-list.hide{
+        display: none;
+    }
+    .nav-bar .nav-list{
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #69349C;
+        z-index: 100;
+    }
+    .nav-bar ul img{
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .nav-bar ul li {
+        display: block;
+        text-align: center;
+        margin: 60px auto;
+    }
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+    .profilePic .shapes{
+        display: none;
+    }
+    .profile-title .description h1{
+        font-weight: 600;
+        font-size: 2.2em;
+    }
+    .profile-title .description h3{
+        font-size: 1.3em;
+    }
+    .profile-title .description  p{
+        font-size: 0.8em;
+    }
+    .profile-Frame .profilePic{
+        flex-basis: 55%;
+    }
+    .photo-container img{
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .gradient-container{
+        padding: 10px 50px;
+    }
+    .logo{
+        width: 60px;
+        height: 60px;
+    }
+    .photo-container img{
+        transform: scale(0.7);
+    }
+    .profile-Frame .profile-title{
+        flex-basis: 60%
+    }
+    .profile-title .description h1{
+        font-weight: 600;
+        font-size: 2em;
+    }
+    .profile-title .description h3{
+        font-size: 1.1em;
+    }
+    .profile-title .description  p{
+        font-size: 0.6em;
+    }
+}
+@media only screen and (max-width:480px){
+    h2{
+        font-size: 1.6em;
+    }
+    .gradient-container{
+        padding: 10px 20px;
+    }
+    .profile-title{
+        display: flex;
+        align-items: center;
+    }
+    .profile-title .description{
+        text-align: center;
+    }
+    .profile-title .description h1{
+        font-size: 1.8em;
+    }
+    .profile-title .description h1 span{
+        display: inline-block;
+    }
+    .profile-title .description  p{
+        margin-top: 0;
+    }
+    .profile-Frame{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .photo-container img{
+        transform: scale(1);
+    }
+}
+

@@ -1,0 +1,198 @@
+
+#bCrossY{
+    top: 15%;
+    left: 40%;
+    position: absolute;
+    z-index: 1;
+    /* transform: scale(2.2) rotate(-15deg);
+    opacity: 0.2; */
+    animation: animatebCrossY 8s linear infinite;
+}
+
+#bCircleHollowV{
+    top: 56%;
+    left: 27%;
+    position: absolute;
+    z-index: 0;
+    width: 300px;
+    height: 300px;
+    border: 40px solid #8A72BE;
+    border-radius: 50%;
+    animation: animateBig 12s linear infinite;
+}
+
+#btriaHollow{
+    top: 17%;
+    left: 5%;
+    position: absolute;
+    z-index: 0;
+    animation: animateBig 5s linear infinite;
+}
+
+.profilePic .shapes{
+    /* border: 1px solid; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.profilePic .shapes > * {
+    position: absolute;
+}
+
+#triangleV{
+    top: 15%;
+    left: 33%;
+    animation: animateRight 10s linear infinite;
+}
+
+#crossY{
+    top: 40%;
+    left: 15%;
+    animation: animateRight 15s linear infinite;
+}
+
+#triaHollowV{
+    top: 70%;
+    left: 15%;
+    animation: animateRight 20s linear infinite;
+}
+
+#circleHollowY{
+    top: 6%;
+    left: 43%;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 12px solid #FFFCCF;
+    border-radius: 50%;
+    animation: animateRight 8s linear infinite;
+}
+
+@keyframes animateRight{
+    0%{
+        transform: scale(0.5) translate(0, 0) rotate(0);
+        opacity: 0.6;
+    }
+    100%{
+        transform: scale(0.8) translate(-80px, -60px) rotate(80deg);
+        opacity: 0;
+    }
+}
+
+#sTriaHollow{
+    top: 20%;
+    left: 70%;
+    /* transform: scale(0.4); */
+    animation: animate 12s linear infinite;    
+}
+
+#crossV{
+    top: 6%;
+    left: 60%;
+    transform: scale(0.4) rotate(-10deg);
+    animation: animate 8s linear infinite;
+}
+
+#scircleFullY{
+    top: 30%;
+    left: 80%;
+    width: 130px;
+    height: 130px;
+    background: #FFFCCF;
+    border-radius: 50%;
+    animation: animate 15s linear infinite;
+}
+
+#striangleV{
+    top: 55%;
+    left: 80%;
+    transform: scale(0.4) rotate(20deg);
+    animation: animate 16s linear infinite;
+}
+
+#circleHollowV{
+    position: absolute;
+    top: 75%;
+    left: 73%;
+    width: 130px;
+    height: 130px;
+    background: transparent;
+    border: 20px solid #8A72BE;
+    border-radius: 50%;
+    animation: animate 12s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0.3) translate(0, 0) rotate(0);
+        opacity: 0.8;
+    }
+    100%{
+        transform: scale(0.5) translate(70px, -100px) rotate(60deg);
+        opacity: 0;
+    }
+}
+
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+
+@keyframes animatebCrossY{
+    0%{
+        transform: scale(1.8) rotate(0);
+        opacity: 0.3;
+    }
+    100%{
+        transform: scale(2.2) translate(-20%, -20%) rotate(-30deg);
+        opacity: 0;
+    }
+}
+
+@keyframes animateBig{
+    0%{
+        transform: scale(0.9) rotate(0);
+        opacity: 0.3;
+    }
+    100%{
+        transform: scale(1.2) translate(-20%, -20%) rotate(-30deg);
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    #bCrossY{
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    #bCircleHollowV{
+        top: 58%;
+        left: 28%;
+        width: 150px;
+        height: 150px;
+        border: 20px solid #8A72BE;
+    }
+    #btriaHollow{
+        top: 17%;
+        left: 8%;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    #bCrossY{
+        top: 20%;
+        left: 65%;
+        width: 100px;
+        height: 100px;
+
+    }
+}
