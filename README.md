@@ -2,7 +2,7 @@
 This is my personal portfolio website created from HTML, CSS, Javascript and some Swiper slider package.
 
 ### Beginner Level
-It is just a simple project to develop my skills in web development
+It is just a simple project to develop my skills in web design and software development
 
 ### Screenshots
 ![Screenshot 2023-01-18 200431](https://user-images.githubusercontent.com/116260076/213168833-1d81bb8d-f41c-4576-8b41-fecd07b2ba3e.png)
